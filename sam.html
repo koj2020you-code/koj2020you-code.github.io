@@ -3,105 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>자고싶어 - 힐링 페이지</title>
-    <style>
-        /* 1. 전체적인 배경과 글꼴 설정 */
-        body {
-            font-family: 'Pretendard', sans-serif;
-            background-color: #f0f2f5; /* 눈이 편한 연회색 배경 */
-            display: flex;
-            flex-direction: column;
-            align-items: center; /* 가로 중앙 정렬 */
-            padding: 50px;
-            color: #333;
-        }
-
-        /* 2. 폼(입력창) 꾸미기 */
-        form {
-            background: white;
-            padding: 20px;
-            border-radius: 12px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-            margin-bottom: 30px;
-            width: 300px;
-        }
-
-        label { font-weight: bold; display: block; margin-bottom: 8px; }
-
-        input, textarea {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 15px;
-            border: 1px solid #ddd;
-            border-radius: 6px;
-            box-sizing: border-box; /* 너비 계산 고정 */
-        }
-
-        button {
-            width: 100%;
-            padding: 10px;
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            border-radius: 6px;
-            cursor: pointer;
-            transition: 0.3s;
-        }
-
-        button:hover { background-color: #45a049; }
-
-        /* 3. 테이블 꾸미기 */
-        table {
-            border-collapse: collapse;
-            width: 300px;
-            background: white;
-            border-radius: 8px;
-            overflow: hidden; /* 테두리 둥글게 적용 */
-            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-        }
-
-        th, td {
-            border: 1px solid #eee;
-            padding: 12px;
-            text-align: center;
-        }
-
-        th { background-color: #ff9800; color: white; border: none; }
-
-        /* 4. 기타 요소들 */
-        .content-box { margin-top: 20px; text-align: center; }
-        .badge {
-            background: #e1e4e8;
-            padding: 4px 8px;
-            border-radius: 4px;
-            font-size: 14px;
-            margin: 2px;
-            display: inline-block;
-        }
-    </style>
+    <title>자고싶어</title>
+    <!-- You can link CSS files here -->
+    <link rel="stylesheet" href="styles.css">
 </head>
+   <form> 
+    <label for=”name”> Hi:</label>
+    <input type=”text” id=”name” name=”name”>
+    <textarea rows=”4” cols”30” name="text"></textarea>
+    <button type=”submit”>제출</button>
+   </form> 
 <body>
+  <style>
+  table {
+    border-collapse: collapse; /* 테두리를 한 줄로 합침 */
+    width: 250px;              /* 표 너비 */
+    text-align: center;        /* [정렬] 글자를 가운데로! */
+  }
 
-    <form> 
-        <label for="name">Hi:</label>
-        <input type="text" id="name" name="name" placeholder="이름을 입력하세요">
-        <textarea rows="4" name="text" placeholder="하고 싶은 말..."></textarea>
-        <button type="submit">제출하기</button>
-    </form> 
+  th, td {
+    border: 1px solid black;   /* 테두리 선 그리기 */
+    padding: 10px;             /* 칸 안에 여유 공간 주기 */
+  }
 
+  th {
+    background-color: orange;  /* [색구분] 제목은 오렌지색 */
+  }
+
+  td {
+    background-color: white;   /* [색구분] 내용은 흰색 */
+  }
+</style>
+    
     <table> 
-        <tr><th>이름</th><th>나이</th></tr>
-        <tr><td>최선호</td><td>25</td></tr>
-    </table>
-
-    <div class="content-box">
-        <h2 style="color: #555;">Hello</h2>
-        <span class="badge">ABC</span> 
-        <span class="badge">ABC</span>
-        <span class="badge">ABC</span>
-        <span class="badge">ABC</span>
-        <p style="color: #888; font-size: 12px;">CDE CDE</p>
-    </div>
-
+    <tr><th>이름</th><th>나이</th></tr>
+    <tr><td>최선호</td><td>100</td></tr>
+    <tr><th>이름</th><th>나이</th></tr>
+    <tr><td>tbw</td><td>100</td></tr>
+    <tr><th>이름</th><th>나이</th></tr>
+    <tr><td>samsung</td><td>100</td></tr>
+  </table>
+    <div>Hello</div>
+    <span>ABC</span> <span>ABC</span>
+    <span>ABC</span>
+    <span>ABC</span>
+    CDE
+    CDE
 </body>
 </html>
