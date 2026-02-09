@@ -14,14 +14,15 @@
         div.btn_div { margin-top:10px }
     </style>
 </head>
-    <form method="GET">
-        <label><input type="checkbox" name="country" value="kr"> </label>대한민국
-        <label><input type="checkbox" name="country" value="us"> </label>미국
-        <label><input type="checkbox" name="country" value="br"> </label>브라질
-        <label><input type="checkbox" name="country" value="sa"> </label>사우디아라비아
-
-        <button type="submit">확인</button>
-    </form>
+    <form action="" method="GET"> 
+        <select name="country" multiple size="4"> 
+        <option value="kr">대한민국</option>
+        <option value="us">미국</option>
+        <option value="br">브라질</option>
+        <option value="sa">사우디아라비아</option>
+    </select>
+    <button type="submit">확인</button> 
+</form>
 <body>
   <form method="GET">
   <fieldset style="display: inline-block;">
