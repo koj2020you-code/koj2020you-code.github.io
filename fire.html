@@ -15,6 +15,25 @@
     </style>
 </head>
 <body>
+  <form method="GET">
+  <fieldset style="width: fit-content; border: 2px solid #2ecc71; border-radius: 8px;">
+    <legend>추가 정보 입력</legend>
+    <p>
+      🎨 포인트 색상: 
+      <input type="color" name="theme_color">
+    </p>  
+</form>
+
+<form>
+    <p>
+      📅 생년월일: 
+      <input type="date" name="birth_day">
+    </p>
+
+    <button type="submit">데이터 전송 확인</button>
+  </fieldset>
+</form>
+
 <form>  
    <div>
     <!— 0에서 100 사이의 숫자를 10 단위로 입력 —>
@@ -26,6 +45,7 @@
     <input type="range" min="0" max="10" step="1"> 요소
    </div>
 </form>
+
 <form>
   <fieldset style="display: inline-block;">
     <input type="text" name="uid">
@@ -36,8 +56,9 @@
     <input type="checkbox" name="fruits" name="orange"> 오렌지
     <button type="submit">확인</button> 
   </fieldset> 
-  </form> 
-   <form>
+</form> 
+
+<form>
    <fieldset style="display: inline-block;">
     <input type="text" name="username">
     <input type="password" name="password">
@@ -47,7 +68,8 @@
     <input type="radio" name="gender" value="f"> 여성
     <input type="file" name="resume">
  </fieldset>
-   </form>
+</form>
+    
     <div id ="form_container">
    <form>
     <div>
