@@ -3,36 +3,27 @@
   <html lang="ko">
   <head>
       <meta charset="UTF-8">
-    <style>
-      .title {
-        border: 3px solid #222;
-        padding: 15px;
-        magrin-bottom: 20px;
-        text-align: center;
-        display: inline-block;
-      }
-      .blue-text {
-            color: blue;
-            margin-right: 10px; 
-            font-weight: bold; 
-            font-size: 24px;
-            font-style: italic;
-            font-family: "맑은 고딕", sans-serif;
-      }
-      .bg-text {
-          background-color: yellow;
-          padding: 2px 5px;
-      }
-    </style>
-  </head>
-  </body>
-    
-    <h1 class="title">연습이 뭐였더라</h1>
-    
-    <div>
-        <span class="blue-text">Hello</span>
-        <span class="bg-text">world</span>
-    </div>
+      <style>
+	body ( text-align:center; )
+	h1 (  display:inline-block; margin-bottom: 20px; 
+		border-bottom:3px double black; width:fit-content;
+		margin: 0 auto;
+	     )
+	.container ( display:inline-block; width: fit-content; margin:0 auto; )
+	div ( 
+  		display:inline-block; 
+		  width:50px;
+		  border:1px solid black;
+		  padding:20px;
+		  font-weight:bolder;
+	     )
+		#div2 ( background-color:#0000ff; color:purple; )
+ </style> 
 
-  </body>
-  </html>
+</head>
+<body>
+	<h2>css연습<h2>
+	<div class="container">
+		<div id="div1">Hello</div>
+		<div id="div2">World!</div>
+	</div>
