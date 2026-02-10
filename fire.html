@@ -12,70 +12,112 @@
         div.btn_div { margin-top:10px }
         label { display:inline-block; width:50px; text-align:right; }
         div.btn_div { margin-top:10px }
+
+        <title>2026년 2월 달력</title>
+    <style>
+        .calendar {
+            width: 500px;
+            margin: 0;
+            text-align: left;
+            border-collapse: collapse;
+            table-layout: fixed;
+            border: 1px solid black;
+        }
+
+        .calendar-title {
+            background-color: green;
+            color: white;
+            text-align: center;
+            font-size: 1.2em;
+            padding: 10px;
+        }
+
+        .day-header {
+            background-color: #f2f2f2;
+            text-align: center;
+        }
+
+        .calendar td {
+            vertical-align: top;
+            padding: 5px;
+            border: 1px solid black;
+        }
+
+        .row-high td { height: 80px; }
+        .row-normal td { height: 60px; }
+
+        .sun { color: red; }
+        .sat { color: blue; }
+        .event-text { color: black; }
+        .soccer-match { color: #001f3f; }
     </style>
 </head>
 <body>
-    <table border="1" style="width: 500px; margin: 0; text-align: left; border-collapse: collapse; table-layout: fixed;">
+
+<table class="calendar">
   <thead>
-      <tr>
-          <th colspan="7" style="background-color; #grenn; text-align: center; font-size: 1.2em; padding: 10px;">
-              2026년 2월
-          </th>    
-      </tr>
-    <tr style="background-color: #f2f2f2; text-align: center;">
-      <th style="color: red;">일</th>
+    <tr>
+      <th colspan="7" class="calendar-title">2026년 2월</th>    
+    </tr>
+    <tr class="day-header">
+      <th class="sun">일</th>
       <th>월</th>
       <th>화</th>
       <th>수</th>
       <th>목</th>
       <th>금</th>
-      <th style="color: blue;">토</th>
+      <th class="sat">토</th>
     </tr>
   </thead>
 
   <tbody>
-    <tr>
-      <td style="color: red; height: 80px; vertical-align: top; padding: 5px;">1</td>
-      <td style="vertical-align: top; padding: 5px;">2</td>
-      <td style="vertical-align: top; padding: 5px;">3</td>
-      <td style="vertical-align: top; padding: 5px;">4<br><small>입춘</small></td>
-      <td style="vertical-align: top; padding: 5px;">5</td>
-      <td style="vertical-align: top; padding: 5px;">6</td>
-      <td style="color: blue; vertical-align: top; padding: 5px;">7</td>
+    <tr class="row-high">
+      <td class="sun">1</td>
+      <td>2</td>
+      <td>3</td>
+      <td>4<br><small>입춘</small></td>
+      <td>5</td>
+      <td>6</td>
+      <td class="sat">7</td>
     </tr>
 
-    <tr>
-      <td style="color: red; height: 60px; vertical-align: top;">8</td>
-      <td style="vertical-align: top;">9</td>
-      <td style="vertical-align: top;">10</td>
-      <td style="vertical-align: top;">11</td>
-      <td style="vertical-align: top;">12</td>
-      <td style="vertical-align: top;">13</td>
-      <td style="color: blue; vertical-align: top;">14</td>
+    <tr class="row-normal">
+      <td class="sun">8</td>
+      <td>9</td>
+      <td>10</td>
+      <td>11</td>
+      <td>12</td>
+      <td>13</td>
+      <td class="sat">14</td>
     </tr>
-    <tr>
-      <td style="color: red; height: 60px; vertical-align: top;">15</td>
-      <td style="color: red; vertical-align: top;">16<br><small>설날연휴</small></td>
-      <td style="color: red; vertical-align: top;">17<br><small>설날</small></td>
-      <td style="color: red; vertical-align: top;">18<br><small>설날연휴</small></td>
-      <td style="vertical-align: top;">19<br><small>우수</small></td>
-      <td style="vertical-align: top;">20</td>
-      <td style="color: blue; vertical-align: top;">21</td>
+
+    <tr class="row-normal">
+      <td class="sun">15</td>
+      <td class="sun">16<br><small>설날연휴</small></td>
+      <td class="sun">17<br><small>설날</small></td>
+      <td class="sun">18<br><small>설날연휴</small></td>
+      <td>19<br><small>우수</small></td>
+      <td>20</td>
+      <td class="sat">21</td>
     </tr>
-    <tr>
-      <td style="color: red; height: 80px; vertical-align: top; padding: 5px;">22</td>
-      <td style="vertical-align: top; padding: 5px;">23</td>
-      <td style="vertical-align: top; padding: 5px;">24</td>
-      <td style="vertical-align: top; padding: 5px;">25</td>
-      <td style="vertical-align: top; padding: 5px;">26</td>
-      <td style="vertical-align: top; padding: 5px;">27</td>
-      <td style="color: blue; vertical-align: top; padding: 5px;">
+
+    <tr class="row-high">
+      <td class="sun">22</td>
+      <td>23</td>
+      <td>24</td>
+      <td>25</td>
+      <td>26</td>
+      <td>27</td>
+      <td class="sat">
         28<br>
-        <small style="color: black;">2.28민주운동</small><br>
-        <small style="color: #001f3f;">⚽(vs이랜드) 빅버드</small>
+        <small class="event-text">2.28민주운동</small><br>
+        <small class="soccer-match">⚽(vs이랜드) 빅버드</small>
       </td>
     </tr>
   </tbody>
+</table>
+
+</body>
 </table>
     
         <form action="" method="GET"> 
