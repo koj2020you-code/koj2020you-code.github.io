@@ -27,10 +27,10 @@ CSS
             border: 1px solid black;
         }
 
-        .row-high td { height: 80px; }
-        .row-normal td { height: 60px; }
+        .row-high td {height: 80px;}
+        .row-normal td {height: 60px;}
 
-        .sun { color: red; }
-        .sat { color: blue; }
-        .event-text { color: black; }
-        .soccer-match { color: #001f3f; }
+        .sun {color:red;}
+        .sat {color:blue;}
+        .event-text {color: black;}
+        .soccer-match {color:#001f3f;}
