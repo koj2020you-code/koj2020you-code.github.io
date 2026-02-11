@@ -32,15 +32,15 @@
 	     a[href$="abc.com"]
 		  	{background-color: pink;}
 		}
-	div {  
+	
 	  div > div:nth-child(1) > a { color: blue; }
 	  nav > a:nth-child(1) { background: red; }
 	  nav > a:nth-child(2) { background: orange; }
 	  nav > a:nth-child(3) { background: yellow; }
 	  nav > a:nth-child(4) { background: green; }
-	  nav + a:nth-child(2) { background: blue; }
-	  p + a:nth-child(3) { background: purple; }  
-	     }
+	  nav + a:nth-child { background: blue; }
+	  p + a:nth-child { background: purple; }  
+	  
  </style> 
 
 </head>
