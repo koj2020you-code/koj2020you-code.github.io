@@ -3,17 +3,13 @@
   <head>
       <meta charset="UTF-8">
       <style>
-        .flex-center {
-        background-image: url("images/apt.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-
-        display: flex;
-        justify-content: space-between;
-        align-items:center;
-        min-height:100vh;
-        padding: 0 50px;
+        .container
+          display: flex;
+          flex-direction: row
+          justify-content: space-between;
+          align-items:center;
+          flex-wap: wap;
+          gap: 20px;
           }
     .box {
       width:200px; height:200px; border:1px solid black;
@@ -21,6 +17,9 @@
       </style>
     <body>  
   <div class="flex-center">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
     <div class="box"></div>
     <div class="box"></div>
     <div class="box"></div>
