@@ -41,12 +41,15 @@
 	  nav > a:nth-child(3) { background: yellow; }
 	  nav > a:nth-child(4) { background: green; }
 	  nav + a { background: blue; }
-	  p + a { background: purple; }  
+	  p + a { background: purple; }
+	  a#a1:hover::before{content:"👉";}            
+	  a#a1:hover::after{content:"👈";}
 	  
  </style> 
 
 </head>
 <body>
+	<a id="a1">가상요소 추가하기</a>
 	<div>
     <div>
           <a href="#">Home</a>				<!-- 글자색을 파랗게-->
